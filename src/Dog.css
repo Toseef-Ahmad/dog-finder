@@ -1,0 +1,43 @@
+.Dog-container {
+  background-color: aliceblue;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Dog-img img {
+  width: 250px;
+  height: 250px;
+  transition-duration: 700ms;
+  border-radius: 50%;
+  filter: grayscale();
+  box-shadow: 0 6px 10px gray;
+}
+
+.Dog-img img:hover {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  filter: none;
+  transition-duration: 800ms;
+  box-shadow: 0 16px 10px gray;
+  transform: rotate3d(1, 1, 1, 45deg);
+}
+
+.Dog {
+  width: 40%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .Dog-container {
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+}
